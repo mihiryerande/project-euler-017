@@ -36,7 +36,7 @@ def letter_count(s):
     return len(list(filter(lambda c: c.isalpha(), list(s))))
 
 
-def main(n):
+def main(n: int) -> int:
     """
     Returns the total count of letters used while
       writing all the numbers 1 to `n` (inclusive) in words.
@@ -46,10 +46,10 @@ def main(n):
         n (int): Natural number
 
     Returns:
-        Total count of letters in 1 to `n` (inclusive) when written as words
+        (int): Total count of letters in 1 to `n` (inclusive) when written as words
 
     Raises:
-        AssertError: if incorrect params are given
+        AssertError: if incorrect args are given
     """
     assert type(n) == int and n > 0
 
